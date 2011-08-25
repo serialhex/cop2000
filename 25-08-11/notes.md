@@ -9,17 +9,28 @@
 (ANALYSIS - THE LOGICAL PART OF PROBLEM SOLVING:)  
   
 1. Define the problem or task (WHY) and divide into modules if necessary.  
-1. Define the data (WHAT).  
+2. Define the data (WHAT).  
     + Define the Output (WANTS).  
         * Hardcopy (on paper).  
         * Softcopy (on the screen)  
     + Define the Input (INVESTMENT).  
-1. Define the Algorithm (HOW).  
-1. Check the Algorithm (HUMILITY).  
+3. Define the Algorithm (HOW).  
+4. Check the Algorithm (HUMILITY).  
 _____________________________________________________
   
 (PROGRAMMING - THE PHYSICAL PART OF PROBLEM SOLVING:)  
   
-1. Code the Algorithm into a Computer Language (TRANSLATE).  
-1. Debug the Code (IMPLEMENT).  
+5. Code the Algorithm into a Computer Language (TRANSLATE).  
+6. Debug the Code (IMPLEMENT).  
 
+
+3 kinds of errors:
+- syntax error
+- logic error
+- runtime error
+
+pay attention to types of data that may be used!
+
+when writing documentation & algorithms, write it from the computers point of view!
+
+# do project!!!
