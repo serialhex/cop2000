@@ -6,5 +6,8 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl
+    cout << "Hello World!\n";
+ //	the folowing is needes to pause on windows systems
+ //	system("pause");
+    return 0;
 }
