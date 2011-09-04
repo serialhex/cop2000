@@ -10,8 +10,3 @@
 4. **Size** - size of the room, in square feet.
 5. **Total** - total cost to carpet the room.
 
-<table>
-    <tr>
-        <td>Foo</td>
-    </tr>
-</table>
