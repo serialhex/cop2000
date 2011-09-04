@@ -1,0 +1,18 @@
+<table>
+    <tr>
+      <td>IDENTIFIER</td>
+      <td>DESCRIPTION</td>
+      <td>DATA TYPE</td>
+      <td>VALUE</td>
+      <td>USAGE</td>
+      <td>DESTINATION</td>
+    </tr>
+    <tr>
+      <td>SFPERSY</td>
+      <td>square feet per square yard</td>
+      <td>Integer</td>
+      <td>9</td>
+      <td>converting sqyd of carpet to sqft</td>
+      <td>llamas</td>
+    </tr>
+</table>
