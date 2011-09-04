@@ -22,12 +22,12 @@ _____________________________________________________
   
 5. Code the Algorithm into a Computer Language (TRANSLATE).  
 6. Debug the Code (IMPLEMENT).  
-
-
-3 kinds of errors:
-- syntax error
-- logic error
-- runtime error
+  
+  
+3 kinds of errors:  
+- syntax error  
+- logic error  
+- runtime error  
 
 pay attention to types of data that may be used!
 
