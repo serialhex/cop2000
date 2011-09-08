@@ -11,18 +11,18 @@ carpet, along with the price of the carpet you want to use available."
 
 ## Computer; take the following inputs, with prompts describing the inputs taken.
 
-1. **Length** of the room in feet, take it as a _float_.
-2. **Width** of the room in feet, take it as a _float_.
-3. **Price** of carpet in square yards, take it as a _float_.
+1. **length** of the room in feet, take it as a _float_.
+2. **width** of the room in feet, take it as a _float_.
+3. **price** of carpet in square yards, take it as a _float_.
 
 ## Computer; calculate the following values:
 
-1. **Price** of carpet in square feet, by dividing it by _SFPERSY_.
-2. **Size** of the room, in square feet, by multiplying the _Length_ and the _Width_.
-3. **Total** amount needed to carpet the room, by multiplying the _Size_ by the _Price_.
+1. **price** of carpet in square feet, by dividing it by _SFPERSY_.
+2. **size** of the room, in square feet, by multiplying the _Length_ and the _Width_.
+3. **total** amount needed to carpet the room, by multiplying the _Size_ by the _Price_.
 
 ## Computer; output the following, formatted as is:
 
-"The cost of carpeting a #{Length} by #{Width} room would be $#{Total.precision(2)},
-and will take #{Size / SFPERSY} square yards of carpet."
+"The cost of carpeting a #{length} by #{width} room would be $#{total.precision(2)},
+and will take #{size / SFPERSY} square yards of carpet."
 
