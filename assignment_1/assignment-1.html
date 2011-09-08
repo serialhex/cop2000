@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<p>Justin Patera<br />COP 2000<br />Thursday Evening<br />Assignment 1</p>
+<h1 id="problem-statement-really-high-level-instructions-for-the-computer">Problem Statement; really high-level instructions for the computer</h1>
+<h2 id="computer-set-symbolic-constant-sfpersy-to-9">Computer; set symbolic constant SFPERSY to 9</h2>
+<h2 id="computer-print-the-following-message-formatted-as-is">Computer; print the following message, formatted as is:</h2>
+<p>“This is Justins awesome carpet room calculator! [Insert Disclaimer]. [Insert<br />License]. [Blah Blah Blah]. Have the length and width of the room you want to<br />carpet, along with the price of the carpet you want to use available.”</p>
+<h2 id="computer-take-the-following-inputs-with-prompts-describing-the-inputs-taken.">Computer; take the following inputs, with prompts describing the inputs taken.</h2>
+<ol style="list-style-type: decimal">
+<li><strong>length</strong> of the room in feet, take it as a <em>float</em>.</li>
+<li><strong>width</strong> of the room in feet, take it as a <em>float</em>.</li>
+<li><strong>price</strong> of carpet in square yards, take it as a <em>float</em>.</li>
+</ol>
+<h2 id="computer-calculate-the-following-values">Computer; calculate the following values:</h2>
+<ol style="list-style-type: decimal">
+<li><strong>price</strong> of carpet in square feet, by dividing it by <em>SFPERSY</em>.</li>
+<li><strong>size</strong> of the room, in square feet, by multiplying the <em>Length</em> and the <em>Width</em>.</li>
+<li><strong>total</strong> amount needed to carpet the room, by multiplying the <em>Size</em> by the <em>Price</em>.</li>
+</ol>
+<h2 id="computer-output-the-following-formatted-as-is">Computer; output the following, formatted as is:</h2>
+<p>“The cost of carpeting a #{length} by #{width} room would be $#{total.precision(2)}, and will take #{size / SFPERSY} square yards of carpet.”</p>
+<hr />
+<h1 id="sample-softcopy">Sample Softcopy</h1>
+<p>This is Justins awesome carpet room calculator! [Insert Disclaimer]. [Insert<CR><br />License]. [Blah Blah Blah]. Have the length and width of the room you want to<CR><br />carpet, along with the price of the carpet you want to use available.<CR><br /><CR><br />Enter the length in feet: [12]<CR><br />Enter the width in feet: [15]<CR><br />Enter the price of the carpet (in square yards): [2.50]<CR><br /><CR><br />The cost of carpeting a 12 by 15 room would be $50,<CR><br />and will take 20 square yards of carpet.<CR></p>
+<hr />
+<h1 id="variable-lists">Variable Lists</h1>
+<h2 id="symbolic-constant-list">Symbolic Constant List:</h2>
+<ol style="list-style-type: decimal">
+<li><strong>SFPERSY</strong>, set equal to <em>9</em></li>
+</ol>
+<h2 id="variable-list">Variable List</h2>
+<ol style="list-style-type: decimal">
+<li><strong>length</strong> - length of the room, in feet.</li>
+<li><strong>width</strong> - width of the room, in feet.</li>
+<li><strong>price</strong> - price of the carpet, in square yards.</li>
+<li><strong>size</strong> - size of the room, in square feet.</li>
+<li><strong>otal</strong> - total cost to carpet the room.</li>
+</ol>
+<hr />
+<h1 id="justins-awesome-carpet-room-calculator---pseudocode">Justins awesome carpet room calculator - pseudocode</h1>
+<pre class="ruby numberLines"><code><br />    SFPERSY = 9
+
+    print &quot;This is Justins awesome carpet room calculator!  [Insert Disclaimer].  [Insert
+    License].  [Blah Blah Blah].  Have the length and width of the room you want to
+    carpet, along with the price of the carpet you want to use available.\n&quot;
+
+    print &quot;\nEnter the length in feet: &quot;
+    length = gets
+    print &quot;\nEnter the width in feet: &quot;
+    width = gets
+    print &quot;\nEnter the price of the carpet (in square yards): &quot;
+    price = gets
+
+    size = length * width
+    price = price / SFPERSY
+    total = size * price
+
+    print &quot;The cost of carpeting a #{length} by #{width} room would be $#{total.precision(2)},
+    and will take #{size / SFPERSY} square yards of carpet.&quot;
+</code></pre>
+<hr />
+<h1 id="data-tracing-chart">Data tracing chart</h1>
+<pre><code>Line Number | Variable   |   Input   | Calculated |
+---------------------------------------------------
+            | length     | 12        |
+            | width      | 15        |
+            | price      | 2.50      |
+            | size       |           | 180
+            | price      |           | 0.277777777778
+            | total      |           | 50
+</code></pre>
+<hr />
+<h1 id="test-output">Test output</h1>
+<p>This is Justins awesome carpet room calculator! [Insert Disclaimer]. [Insert<br />License]. [Blah Blah Blah]. Have the length and width of the room you want to<br />carpet, along with the price of the carpet you want to use available.</p>
+<p>Enter the length in feet: [12]<br />Enter the width in feet: [15]<br />Enter the price of the carpet (in square yards): [2.50]</p>
+<p>The cost of carpeting a 12 by 15 room would be $50,<br />and will take 20 square yards of carpet.</p>
+</body>
+</html>

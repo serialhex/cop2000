@@ -1,7 +1,7 @@
-Justin Patera
-COP 2000
-Thursday Evening
-Assignment 1
+Justin Patera  
+COP 2000  
+Thursday Evening  
+Assignment 1  
 
 # Problem Statement; really high-level instructions for the computer
 
