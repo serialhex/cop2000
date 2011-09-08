@@ -57,7 +57,7 @@ and will take 20 square yards of carpet.<CR>
 2. **width** - width of the room, in feet.
 3. **price** - price of the carpet, in square yards.
 4. **size** - size of the room, in square feet.
-5. **otal** - total cost to carpet the room.
+5. **total** - total cost to carpet the room.
 
 --------------------------------------------------------------------------------
 
