@@ -1,4 +1,9 @@
-# Problem Statement, Assignment 1
+Justin Patera
+COP 2000
+Thursday Evening
+Assignment 1
+
+# Problem Statement; really high-level instructions for the computer
 
 ## Computer; set symbolic constant SFPERSY to 9
 
@@ -48,17 +53,17 @@ and will take 20 square yards of carpet.<CR>
 1. **SFPERSY**, set equal to _9_  
 
 ## Variable List
-1. **Length** - length of the room, in feet.
-2. **Width** - width of the room, in feet.
-3. **Price** - price of the carpet, in square yards.
-4. **Size** - size of the room, in square feet.
-5. **Total** - total cost to carpet the room.
+1. **length** - length of the room, in feet.
+2. **width** - width of the room, in feet.
+3. **price** - price of the carpet, in square yards.
+4. **size** - size of the room, in square feet.
+5. **otal** - total cost to carpet the room.
 
 --------------------------------------------------------------------------------
 
 # Justins awesome carpet room calculator - pseudocode
 
-{% highlight ruby linenos %}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ { .ruby .numberLines}
 
 	SFPERSY = 9
 
@@ -80,7 +85,32 @@ and will take 20 square yards of carpet.<CR>
 	print "The cost of carpeting a #{length} by #{width} room would be $#{total.precision(2)},
 	and will take #{size / SFPERSY} square yards of carpet."
 
-{% endhighlight %}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 --------------------------------------------------------------------------------
 
+# Data tracing chart
+
+	Line Number | Variable   |   Input   | Calculated |
+	---------------------------------------------------
+	            | length     | 12        |
+	            | width      | 15        |
+	            | price      | 2.50      |
+	            | size       |           | 180
+	            | price      |           | 0.277777777778
+	            | total      |           | 50
+
+--------------------------------------------------------------------------------
+
+# Test output
+
+This is Justins awesome carpet room calculator!  [Insert Disclaimer].  [Insert  
+License].  [Blah Blah Blah].  Have the length and width of the room you want to  
+carpet, along with the price of the carpet you want to use available.  
+  
+Enter the length in feet: [12]  
+Enter the width in feet: [15]  
+Enter the price of the carpet (in square yards): [2.50]  
+  
+The cost of carpeting a 12 by 15 room would be $50,  
+and will take 20 square yards of carpet.  
