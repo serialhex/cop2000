@@ -1,7 +1,12 @@
-/**************************************************
+/*******************************************************
  * An awesome meter to feet && inches calculator
+ * Programmed by Justin Patera
+ * Copyleft September 14, 2011
  *
- **************************************************/
+ * Released under the terms of the MIT license
+ * http://www.opensource.org/licenses/mit-license.php
+ * just 'cause i'm cool like that
+ *******************************************************/
 
 
 #include <iostream>
