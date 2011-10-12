@@ -1,0 +1,53 @@
+Assignment 5 problem synopsis & information.
+Completed by Justin Patera
+
+
+
+Problem Statement:  Get a list of bowling scores from a user through console input.  Stop taking inputs when an input is negative.  Take that list of values, get the average of them, rounded to the nearest whole number, and display the result.
+
+Variable List:
+    Name     | Type |    Purpose    |
+-------------+------+---------------|
+    count    | int  |    Counter    |
+ sum_scores  | int  | Sum of Scores |
+  score_ent  | int  | Entered Score |
+     avg     | int  | Average Score |
+
+Algorithm: see a5_flowchart.pdf
+
+Data Tracing Chart:
+		|  count  |  sum_scores  |  score_ent  |  avg  |
+		|---------+--------------+-------------+-------|
+start	|    0    |     0        |      0      |   0   |
+first	|         |              |     120     |       |
+		|    1    |              |             |       |
+		|         |     120      |             |       |
+second	|         |              |     142     |       |
+		|    2    |              |             |       |
+		|         |     262      |             |       |
+third	|         |              |     97      |       |
+		|    3    |              |             |       |
+		|         |     359      |             |       |
+fourth	|         |              |     112     |       |
+		|    4    |              |             |       |
+		|         |     471      |             |       |
+fifth	|         |              |      -1     |       |
+		|         |              |             |  118  |
+
+Test Softcopy:
+
+	BOWLING TEAM AVERAGE PROGRAM
+	============================
+
+	This program will repeatedly request and store the score of
+	an individual bowler and accumulate and count each one until
+	the user enters a negative score. After that, the program will
+	calculate and display the rounded team average.
+
+	Player's score (negative number when done)? [120]
+	Player's score (negative number when done)? [142]
+	Player's score (negative number when done)? [97]
+	Player's score (negative number when done)? [112]
+	Player's score (negative number when done)? [-1]
+
+	Team average: 118
