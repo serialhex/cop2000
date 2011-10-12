@@ -26,7 +26,7 @@ ONE MONTH CALENDAR\n\
 ==================\n\
 \n\
 Written by Randolph Gibson\n\
-Coded by Joe Student\n\
+Coded by Justin Patera\n\
 \n\
 Select from the menu below the numeral indicating which day of the week\n\
 should appear as the first day of the month on your calendar.\n\n";
