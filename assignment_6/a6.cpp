@@ -3,7 +3,7 @@
  * Written by Randolph Gibson
  * Programmed by Justin Patera
  * 
- * 
+ * this code is awesome...  because i am awesome!! :D
  ****************************************************/
 
 #include <iostream>
