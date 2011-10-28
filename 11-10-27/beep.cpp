@@ -4,6 +4,7 @@
 
 using namespace std;
 
-void main() {
-	cout << "\a";
+int main() {
+	cout << "beep!\a\n";
+	return 0;
 }
