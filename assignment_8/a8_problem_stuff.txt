@@ -1,0 +1,37 @@
+Justin Patera
+COP 2k
+Assignment 8
+Incredible Array Item Finder and Counter
+
+Problem Statement:
+Within an array, find the amount of times a value that is specified at the keyboard.
+
+Symbolic Constant List
+LABEL |    DESCRIPTION    | DATA TYPE | VALUE | USAGE  | DESTINATION
+SIZE  | Size of the array |  Integer  |   20  | Tested |  -
+
+Variable List
+LABEL |      DESCRIPTION       | DATA TYPE |  SOURCE  | DESTINATION
+ARRAYS:
+  ary |     Random numbers     |  Integer  | Assigned |      -
+SCALARS:
+  idx |     index in array     |  Integer  | Set to 0 |      -
+  sum | num of times val found |  Integer  | Set to 0 |    Screen
+  val |  the value one seeks   |  Integer  | Keyboard |    Screen
+
+
+Test Softcopy
+The numbers to the left of the test screen are there only for clarity and analysis.
+The notation <CR> below indicates a carriage return (new line).
+Underlined and bold text indicates examples of user responses to prompts
+
+1	ARRAY SCANNER<CR>
+2	=============<CR>
+3	<CR>
+4	This program will Scan an array of stored integers seeking<CR>
+5	a specific value and display a message indicating how many<CR>
+6	times (if any) that the value was found in the array.<CR>
+7	<CR>
+8	Value to seek? [8]<CR>
+9	<CR>
+10	The value 8 was found 3 times in the array.<CR>
