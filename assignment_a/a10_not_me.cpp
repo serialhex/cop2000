@@ -46,18 +46,15 @@ int main()
     UNAME[PS] = LAST[PS] ;
     
     PT=0;
-    while(PT < USIZE && PT < strlen(LAST)+4)
-    {
-    for(PS=0; PS<4 && PS<strlen(LAST); PS++)
-    {
-    UNAME[PT] = LAST[PS]; 
-    PT++;
-    }
-    for(PS=5; PS<SSNSIZE; PS++)
-    {
-    UNAME[PT] = SSN[PS];
-    PT++;
-    }
+    while(PT < USIZE && PT < strlen(LAST)+4) {
+        for(PS=0; PS<4 && PS<strlen(LAST); PS++) {
+            UNAME[PT] = LAST[PS]; 
+            PT++;
+        }
+        for(PS=5; PS<SSNSIZE; PS++) {
+            UNAME[PT] = SSN[PS];
+            PT++;
+        }
     }
     UNAME[PT] = '\0';
     

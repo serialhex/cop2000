@@ -42,12 +42,16 @@ FIRST DAY OF MONTH MENU\n\
 5. Thursday\n\
 6. Friday\n\
 7. Saturday\n\
-\n\
-Numeral (1-7)? ";
-	cin >> DAY1;
+\n";
+	do {
+		"Numeral (1-7)? ";
+		cin >> DAY1;
+	} while ((1 > DAY1) && (DAY1 > 7));
 
-	cout << "\nHow many days are in this month (28-31)? ";
-	cin >> QDAYS;
+	do {
+		cout << "\nHow many days are in this month (28-31)? ";
+		cin >> QDAYS;
+	} while ((28 > QDAYS) && (QDAYS > 31));
 	cout << endl;
 
 	// a bit of pre-processing & logic setup...
