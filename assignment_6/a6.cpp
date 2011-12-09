@@ -44,63 +44,52 @@ FIRST DAY OF MONTH MENU\n\
 7. Saturday\n\
 \n";
 	do {
-		"Numeral (1-7)? ";
+		cout << "Numeral (1-7)? ";
 		cin >> DAY1;
-	} while ((1 > DAY1) && (DAY1 > 7));
+	} while ((1 > DAY1) || (DAY1 > 7));
 
 	do {
 		cout << "\nHow many days are in this month (28-31)? ";
 		cin >> QDAYS;
-	} while ((28 > QDAYS) && (QDAYS > 31));
+	} while ((28 > QDAYS) || (QDAYS > 31));
 	cout << endl;
 
-	// a bit of pre-processing & logic setup...
-	int line = 1; // sets the line number, to keep track of where we are at
-	DAYNUM = DAYNUM - DAY1 +1; // sets the date to a (possibly) neg number,
-		// so that we can do simple math on DAYNUM & QDAYS and not have to worry
-		// about +- shifting of info (it also make the code more readible IMHO)
-
-	// main loop
-	do {
-		// horizontal bars
-		if (((line % 3) == 0 ) || (line == 1)) {
+	// the heading... 
+	for (int l = 1; l <=3; l++) {
+		if (l % 2 == 1) {
 			for (COL = 1; COL <= 7; COL++) {
 				cout << "+---------";
 			}
 			cout << "+\n";
 		}
-		// date bar
-		else if (line == 2) {
+		else {
 			cout << "|   SUN   |   MON   |   TUE   |   WED   |   THU   |   FRI   |   SAT   |\n";
 		}
-		// dates
-		else if ((line % 3) == 1) {
-			for (COL = 1; COL <= 7; COL++) {
-				if ((DAYNUM > 0) && (DAYNUM <= QDAYS)) {
-					cout << "|" << setw(9) << left << DAYNUM;
-				}
-				else
-					cout << "|         ";
+	}
+
+// continue from here
+	DAYNUM = 1;
+
+	// main loop
+	while (DAYNUM <= QDAYS) {
+		for (COL = 1; COL <= 7; COL++) {
+			cout << '|';
+			if ((DAYNUM == 1 && COL < DAY1) || (DAYNUM > QDAYS)) {
+				cout << "         ";
+			}
+			else {
+				cout << setw(9) << left << DAYNUM;
 				DAYNUM++;
 			}
-			cout << "|\n";
 		}
-		// whitespace lines
-		else if ((line % 3) == 2) {
-			for (COL = 1; COL <= 7; COL++) {
-				cout << "|         ";
-			}
-			cout << "|\n";
-		}
-		line++;
-	} while (DAYNUM <= QDAYS);
+		cout << "|\n"; // END OF LINE
 
-	for (COL = 1; COL <= 7; COL++) {
-		cout << "|         ";
+		for (COL = 1; COL <= 7; COL++)
+			cout << "|         ";
+		cout << "|\n"; // END OF LINE
+
+		for (COL = 1; COL <= 7; COL++)
+			cout << "+---------";
+		cout << "|\n"; // END OF LINE
 	}
-	cout << "|\n";
-	for (COL = 1; COL <= 7; COL++) {
-		cout << "+---------";
-	}
-	cout << "+\n";
 }

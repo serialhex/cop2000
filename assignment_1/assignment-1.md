@@ -5,30 +5,7 @@ Assignment 1
 
 # Problem Statement; really high-level instructions for the computer
 
-## Computer; set symbolic constant SFPERSY to 9
-
-## Computer; print the following message, formatted as is:
-
-"This is Justins awesome carpet room calculator!  [Insert Disclaimer].  [Insert  
-License].  [Blah Blah Blah].  Have the length and width of the room you want to  
-carpet, along with the price of the carpet you want to use available."
-
-## Computer; take the following inputs, with prompts describing the inputs taken.
-
-1. **length** of the room in feet, take it as a _float_.
-2. **width** of the room in feet, take it as a _float_.
-3. **price** of carpet in square yards, take it as a _float_.
-
-## Computer; calculate the following values:
-
-1. **price** of carpet in square feet, by dividing it by _SFPERSY_.
-2. **size** of the room, in square feet, by multiplying the _Length_ and the _Width_.
-3. **total** amount needed to carpet the room, by multiplying the _Size_ by the _Price_.
-
-## Computer; output the following, formatted as is:
-
-"The cost of carpeting a #{length} by #{width} room would be $#{total.precision(2)},
-and will take #{size / SFPERSY} square yards of carpet."
+Program will send a message to the screen to greet user and introduce itself and ask the user for the length of the room, then store that number in storage location named L. It then asks for the width, storing that number in a location named W. Finally the program will ask for the price of the carpet in square yards, it will then divide that amount by 9, storing that in a location named P. All user inputs will be able to use two decimal places if necessary.  The program will then multiply the length by the width and store this number in location SQFT. The program will then multiply the value in SQFT by the value in P, storing this value in a location named TotalCost. The program will display a message on screen stating that the total square footage of the room, and what the cost to carpet the room would be, rounded to two decimals. The program will lastly thank the user and display the program credits. 
 
 --------------------------------------------------------------------------------
 
@@ -50,7 +27,9 @@ and will take 20 square yards of carpet.<CR>
 # Variable Lists
 
 ## Symbolic Constant List:
-1. **SFPERSY**, set equal to _9_  
+
+Identifier | Description 			| Data Type 	| Value	| Use		| Destination
+SFPERSY | Square Feet per Square Yard | Int 		| 9	| Used for P	| N/A
 
 ## Variable List
 1. **length** - length of the room, in feet.
@@ -65,25 +44,24 @@ and will take 20 square yards of carpet.<CR>
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ { .ruby .numberLines}
 
-	SFPERSY = 9
+	START
 
 	print "This is Justins awesome carpet room calculator!  [Insert Disclaimer].  [Insert
 	License].  [Blah Blah Blah].  Have the length and width of the room you want to
-	carpet, along with the price of the carpet you want to use available.\n"
+	carpet, along with the price of the carpet you want to use available."
 
-	print "\nEnter the length in feet: "
+	print "Enter the length in feet: "
 	length = gets
-	print "\nEnter the width in feet: "
+	print "Enter the width in feet: "
 	width = gets
-	print "\nEnter the price of the carpet (in square yards): "
+	print "Enter the price of the carpet (in square yards): "
 	price = gets
 
 	size = length * width
-	price = price / SFPERSY
+	price = price / 9
 	total = size * price
 
-	print "The cost of carpeting a #{length} by #{width} room would be $#{total.precision(2)},
-	and will take #{size / SFPERSY} square yards of carpet."
+	print "The cost of carpeting a #{length} by #{width} room would be $#{total}, and will take #{size / 9} square yards of carpet."
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
